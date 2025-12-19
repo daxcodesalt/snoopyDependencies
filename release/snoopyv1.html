@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Math ELA Learning</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        @keyframes move {
+            100% {
+                transform: translate3d(0, 0, 1px) rotate(360deg);
+            }
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #ff0000, #00ff00, #0000ff, #ff0000);
+            background-size: 500% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
+            animation: gradientShine 8s ease infinite alternate;
+            user-select: none;
+        }
+
+        @keyframes gradientShine {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+
+        .background {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background: #0a0a0a;
+            overflow: hidden;
+        }
+
+        .background span {
+            width: 3vmin;
+            height: 3vmin;
+            border-radius: 3vmin;
+            backface-visibility: hidden;
+            position: absolute;
+            animation: move;
+            animation-duration: 45;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+
+        .background span:nth-child(0) {
+            color: #bf09f1;
+            top: 62%;
+            left: 16%;
+            animation-duration: 47s;
+            animation-delay: -28s;
+            transform-origin: -8vw -21vh;
+            box-shadow: 6vmin 0 1.6829739422091574vmin currentColor;
+        }
+        .background span:nth-child(1) {
+            color: #ffffff;
+            top: 17%;
+            left: 67%;
+            animation-duration: 22s;
+            animation-delay: -18s;
+            transform-origin: -5vw 1vh;
+            box-shadow: 6vmin 0 1.4329653067827415vmin currentColor;
+        }
+        .background span:nth-child(2) {
+            color: #bf09f1;
+            top: 50%;
+            left: 50%;
+            animation-duration: 50s;
+            animation-delay: -21s;
+            transform-origin: 5vw 11vh;
+            box-shadow: -6vmin 0 0.8350138930388376vmin currentColor;
+        }
+        .background span:nth-child(3) {
+            color: #bf09f1;
+            top: 14%;
+            left: 16%;
+            animation-duration: 38s;
+            animation-delay: -27s;
+            transform-origin: 11vw 16vh;
+            box-shadow: -6vmin 0 1.4361423052496098vmin currentColor;
+        }
+        .background span:nth-child(4) {
+            color: #bf09f1;
+            top: 71%;
+            left: 51%;
+            animation-duration: 23s;
+            animation-delay: -17s;
+            transform-origin: -19vw 12vh;
+            box-shadow: -6vmin 0 1.6152071353427582vmin currentColor;
+        }
+        .background span:nth-child(5) {
+            color: #ffffff;
+            top: 52%;
+            left: 15%;
+            animation-duration: 52s;
+            animation-delay: -22s;
+            transform-origin: -23vw 13vh;
+            box-shadow: -6vmin 0 1.4604187022105428vmin currentColor;
+        }
+        .background span:nth-child(6) {
+            color: #ffffff;
+            top: 97%;
+            left: 8%;
+            animation-duration: 17s;
+            animation-delay: -33s;
+            transform-origin: -9vw -20vh;
+            box-shadow: -6vmin 0 1.5703488041610214vmin currentColor;
+        }
+        .background span:nth-child(7) {
+            color: #ffffff;
+            top: 60%;
+            left: 69%;
+            animation-duration: 32s;
+            animation-delay: -7s;
+            transform-origin: -16vw 4vh;
+            box-shadow: -6vmin 0 1.0786894476216897vmin currentColor;
+        }
+        .background span:nth-child(8) {
+            color: #bf09f1;
+            top: 44%;
+            left: 31%;
+            animation-duration: 43s;
+            animation-delay: -20s;
+            transform-origin: 16vw 3vh;
+            box-shadow: -6vmin 0 1.188911342980361vmin currentColor;
+        }
+        .background span:nth-child(9) {
+            color: #ffffff;
+            top: 50%;
+            left: 63%;
+            animation-duration: 42s;
+            animation-delay: -34s;
+            transform-origin: 9vw -16vh;
+            box-shadow: 6vmin 0 1.0746842429407355vmin currentColor;
+        }
+        .background span:nth-child(10) {
+            color: #ffffff;
+            top: 1%;
+            left: 2%;
+            animation-duration: 26s;
+            animation-delay: -43s;
+            transform-origin: -23vw 17vh;
+            box-shadow: -6vmin 0 1.2802945808487634vmin currentColor;
+        }
+        .background span:nth-child(11) {
+            color: #bf09f1;
+            top: 85%;
+            left: 2%;
+            animation-duration: 15s;
+            animation-delay: -16s;
+            transform-origin: 13vw -17vh;
+            box-shadow: -6vmin 0 1.6680367521015271vmin currentColor;
+        }
+        .background span:nth-child(12) {
+            color: #bf09f1;
+            top: 28%;
+            left: 74%;
+            animation-duration: 9s;
+            animation-delay: -7s;
+            transform-origin: -8vw 20vh;
+            box-shadow: -6vmin 0 1.4034211722314545vmin currentColor;
+        }
+        .background span:nth-child(13) {
+            color: #bf09f1;
+            top: 36%;
+            left: 51%;
+            animation-duration: 38s;
+            animation-delay: -6s;
+            transform-origin: -6vw -2vh;
+            box-shadow: 6vmin 0 1.633634443394913vmin currentColor;
+        }
+        .background span:nth-child(14) {
+            color: #bf09f1;
+            top: 25%;
+            left: 3%;
+            animation-duration: 6s;
+            animation-delay: -26s;
+            transform-origin: -20vw -13vh;
+            box-shadow: -6vmin 0 1.2479434396431106vmin currentColor;
+        }
+        .background span:nth-child(15) {
+            color: #bf09f1;
+            top: 44%;
+            left: 38%;
+            animation-duration: 53s;
+            animation-delay: -28s;
+            transform-origin: 13vw 20vh;
+            box-shadow: 6vmin 0 1.0728747202129134vmin currentColor;
+        }
+        .background span:nth-child(16) {
+            color: #ffffff;
+            top: 4%;
+            left: 33%;
+            animation-duration: 15s;
+            animation-delay: -17s;
+            transform-origin: -23vw -5vh;
+            box-shadow: -6vmin 0 1.7120962825695751vmin currentColor;
+        }
+        .background span:nth-child(17) {
+            color: #bf09f1;
+            top: 23%;
+            left: 12%;
+            animation-duration: 24s;
+            animation-delay: -7s;
+            transform-origin: 21vw -2vh;
+            box-shadow: -6vmin 0 1.287354358574204vmin currentColor;
+        }
+        .background span:nth-child(18) {
+            color: #ffffff;
+            top: 19%;
+            left: 56%;
+            animation-duration: 16s;
+            animation-delay: -47s;
+            transform-origin: -21vw 5vh;
+            box-shadow: -6vmin 0 1.2421886900563825vmin currentColor;
+        }
+        .background span:nth-child(19) {
+            color: #ffffff;
+            top: 57%;
+            left: 47%;
+            animation-duration: 50s;
+            animation-delay: -13s;
+            transform-origin: 6vw 6vh;
+            box-shadow: 6vmin 0 1.2897943894722244vmin currentColor;
+        }
+
+        .fancy-text {
+            font-family: 'Cookie', cursive;
+            font-weight: 300;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .mybutton{
+            background: rgb(25, 31, 40);
+            font-size: 15px;
+            margin: 5px;
+            border-radius: 19px;
+            transition: font-size .2s;
+        }
+        .mybutton:hover{
+            font-size: 18px;
+        }
+        body{
+            overflow: hidden;
+        }
+        .corner{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-align: left;
+            padding-left: 1.35rem;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <body class="bg-black text-white p-4 text-center">
+        <div class="background">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="main" class="text-white p-5 text-center" style="transition: opacity .25s, top .25s; opacity: 0; position: absolute; top: 52%; left: 50%; width: 100%; transform: translate(-50%, -50%); z-index: 25000">
+            <h1 class="gradient-text fancy-text text-center display-4" style="font-size: 7rem">snoopy v1</h1><br>
+            <button id="bbplus" class="semag btn mybutton border border-1 border-secondary text-white w-25">Baldi's Basics Plus</button><br>
+            <button id="c" class="semag btn border mybutton border-1 border-secondary text-white w-25">Celeste</button><br>
+            <button id="sr" class="semag btn border mybutton border-1 border-secondary text-white w-25">Schoolboy Runaway</button><br>
+            <button id="u" class="semag btn border mybutton border-1 border-secondary text-white w-25">ULTRAKILL</button><br>
+            <button id="k" class="semag btn border mybutton border-1 border-secondary text-white w-25">Kindergarten</button><br>
+            <button id="o" class="semag btn border mybutton border-1 border-secondary text-white w-25">Omori</button><br>
+            <button id="mc" class="semag btn border mybutton border-1 border-secondary text-white w-25">Minecraft 1.12.2</button><br>
+        </div>
+        <h1 id="credit" class="gradient-text fancy-text text-center display-4 corner" style="transition: opacity .25s; opacity: 0; font-size: 4rem">made by bobby</h1><br>
+        <iframe src="about:blank" style="display: none; top: 0; left: 0; z-index: 234234234234234234234; background: rgb(187, 91, 91); position: absolute; width: 100%; height: 100%; border: 0;" id="fm"></iframe>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            var fmElement = document.getElementById("fm");
+            var semags = {
+                "bbplus":"https://cdn.jsdelivr.net/gh/daxcodesalt/snoopyDependencies@main/bbplus.html",
+                "c":"https://cdn.jsdelivr.net/gh/daxcodesalt/snoopyDependencies@main/c.html",
+                "sr":"https://cdn.jsdelivr.net/gh/daxcodesalt/snoopyDependencies@main/sr.html",
+                "u":"https://cdn.jsdelivr.net/gh/daxcodesalt/snoopyDependencies@main/u.html",
+                "k":"https://cdn.jsdelivr.net/gh/daxcodesalt/snoopyDependencies@main/k.html",
+                "o":"https://cdn.jsdelivr.net/gh/daxcodesalt/snoopyDependencies@main/o.html",
+                "mc":"https://cdn.jsdelivr.net/gh/daxcodesalt/snoopyDependencies@main/mc.html"
+            }
+
+            function showFrame(gme){
+                //$("#fm").attr("src", "about:blank");
+                $("#fm").css('display', "block");
+                fetch(semags[gme])
+                    .then(response => response.text())
+                    .then(text => {
+                        var landynisveryweird = document.getElementById("fm")
+                        landynisveryweird.contentDocument.open();
+                        landynisveryweird.contentDocument.write(text)
+                        landynisveryweird.contentDocument.close();
+                    });
+            }
+
+            $(document).ready(function(){
+                setTimeout(function(){
+                    $("#main").css("opacity", 1);
+                    $("#main").css("top", "50%");
+                    $("#credit").css("opacity", 1)
+                }, 50)
+                $(".semag").on('click', function(){
+                    $("#main").css("opacity", 0);
+                    $("#main").css("top", "52%");
+                    showFrame($(this).attr("id"));
+                    setTimeout(function(){
+                        $("#main").css("display", "none");
+                    }, 300)
+                })
+            })
+        </script>
+    </body>
+</html>
